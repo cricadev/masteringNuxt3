@@ -27,9 +27,7 @@
     <p>{{ lesson.text }}</p>
     <LessonCompleteButton
       :model-value="isLessonComplete"
-      @update:model-value="
-        throw createError('Could not update');
-      "
+      @update:model-value="toggleComplete"
     />
   </div>
 </template>
