@@ -8,5 +8,5 @@
 </template>
 
 <script setup lang="ts">
-const firstLesson = useFirstLesson();
+const firstLesson = await useFirstLesson();
 </script>
