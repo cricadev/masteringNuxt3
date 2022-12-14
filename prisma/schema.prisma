@@ -12,7 +12,7 @@ generator client {
 model Course {
   id        Int       @id @default(autoincrement())
   title     String
-  chatpers  Chapter[]
+  chapters  Chapter[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
 }
