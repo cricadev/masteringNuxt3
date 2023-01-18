@@ -12,10 +12,12 @@
   "devDependencies": {
     "@nuxtjs/supabase": "^0.2.6",
     "@nuxtjs/tailwindcss": "^6.1.3",
+    "@pinia/nuxt": "^0.4.6",
     "@prisma/client": "^4.7.1",
     "@tailwindcss/typography": "^0.5.8",
     "@vueuse/core": "^9.6.0",
     "@vueuse/nuxt": "^9.6.0",
-    "nuxt": "3.0.0"
+    "nuxt": "3.0.0",
+    "pinia": "^2.0.29"
   }
 }
