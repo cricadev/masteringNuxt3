@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import { courseProgress } from '~/stores/courseProgress.ts';
+import { useCourseProgress } from '~/stores/courseProgress.ts';
 const course = await useCourse();
 const route = useRoute();
 const { chapterSlug, lessonSlug } = route.params;
