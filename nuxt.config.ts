@@ -4,6 +4,7 @@ import vsharp from 'vite-plugin-vsharp';
 export default defineNuxtConfig({
   runtimeConfig: {
     stripeSecret: '',
+    stripeWebhookSecret: '',
     public: {
       stripeKey: '',
     },
