@@ -1,7 +1,6 @@
 export default {
   title: 'TypeScript with Vue.js 3',
-  chapters: {
-    create:[
+  chapters: [
     {
       title: 'Chapter 1',
       slug: '1-chapter-1',
@@ -15,9 +14,11 @@ export default {
             'https://vueschool.io/lessons/introduction-to-typescript-with-vue-js-3',
           videoId: 684236333,
           text: `In this lesson, we take a look at some of the benefits of using TypeScript with Vue.js including:
+
 Improved error detection in your IDE and at build time
 Safer and less stressful refactoring
 More focused and accurate IDE autocompletion
+
 We also answer the question: “Are there any cases when you wouldn’t want to use TypeScript?”.`,
         },
         {

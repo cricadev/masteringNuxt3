@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@nuxtjs/supabase': ^0.3.5
   '@nuxtjs/tailwindcss': ^6.6.5
+  '@prisma/client': ^4.12.0
   '@tailwindcss/typography': ^0.5.9
   '@vueuse/core': ^9.13.0
   '@vueuse/nuxt': ^9.13.0
@@ -11,6 +12,7 @@ specifiers:
 devDependencies:
   '@nuxtjs/supabase': 0.3.5
   '@nuxtjs/tailwindcss': 6.6.5
+  '@prisma/client': 4.12.0
   '@tailwindcss/typography': 0.5.9
   '@vueuse/core': 9.13.0
   '@vueuse/nuxt': 9.13.0_nuxt@3.3.3
@@ -876,6 +878,23 @@ packages:
       - supports-color
       - ts-node
       - webpack
+    dev: true
+
+  /@prisma/client/4.12.0:
+    resolution: {integrity: sha512-j9/ighfWwux97J2dS15nqhl60tYoH8V0IuSsgZDb6bCFcQD3fXbXmxjYC8GHhIgOk3lB7Pq+8CwElz2MiDpsSg==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7
+    dev: true
+
+  /@prisma/engines-version/4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7:
+    resolution: {integrity: sha512-JIHNj5jlXb9mcaJwakM0vpgRYJIAurxTUqM0iX0tfEQA5XLZ9ONkIckkhuAKdAzocZ+80GYg7QSsfpjg7OxbOA==}
     dev: true
 
   /@rollup/plugin-alias/4.0.4_rollup@3.20.2:
