@@ -35,7 +35,7 @@ model Lesson {
   slug        String
   number      Int
   downloadUrl String
-  videoId     String
+  videoId     Int
   text        String
   sourceUrl   String?
   createdAt   DateTime @default(now())

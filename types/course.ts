@@ -1,14 +1,4 @@
-export type Lesson = {
-  title: string;
-  slug: string;
-  number: number;
-  downloadUrl: string;
-  videoId: number;
-  text: string;
-  sourceUrl?: string;
-  path: string;
-};
-
+import { Lesson } from "@prisma/client";
 export type LessonWithPath = Lesson & {
   path: string;
 };
@@ -22,7 +12,7 @@ export type Chapter = {
 export type Course = {
   title: string;
   chapters: Chapter[];
-}
+};
 
 export type OutlineBase = {
   title: string;
