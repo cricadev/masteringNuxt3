@@ -1,7 +1,7 @@
 
-// Import Prisma client
-import { PrismaClient } from '@prisma/client';
+import prisma from "@prisma/client";
 
+const { PrismaClient, Prisma } = prisma;
 // Instantiate the Prisma client
 const prisma = new PrismaClient();
 

@@ -1,7 +1,7 @@
-import { PrismaClient } from "@prisma/client";
 import protectRoute from "~/server/utils/protectRoute";
+import prisma from "@prisma/client";
 
-const prisma = new PrismaClient();
+const { PrismaClient, Prisma } = prisma;
 
 export default defineEventHandler(async (event) => {
   // We allow users to access the first lesson without being logged in

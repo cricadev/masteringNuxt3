@@ -1,6 +1,6 @@
-import { PrismaClient, Prisma } from "@prisma/client";
+import prisma from "@prisma/client";
 
-const prisma = new PrismaClient();
+const { PrismaClient, Prisma } = prisma;
 
 const lessonSelect = Prisma.validator<Prisma.LessonArgs>()({
   select: {
