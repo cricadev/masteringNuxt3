@@ -1,9 +1,8 @@
 
-import prisma from "@prisma/client";
+import prisma from "../server/api/client"
 
-const { PrismaClient, Prisma } = prisma;
-// Instantiate the Prisma client
-const prisma = new PrismaClient();
+
+
 
 // Define your seed data
 const courseData = {

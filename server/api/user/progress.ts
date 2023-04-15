@@ -1,10 +1,7 @@
 import protectRoute from "~/server/utils/protectRoute";
 import { ChapterOutline, LessonOutline } from "../course/meta.get";
 import { CourseProgress, ChapterProgress } from "~/types/course";
-
-import { Prisma, PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import prisma from "~/server/api/client";
 
 export default defineEventHandler(async (event) => {
   // Throw a 401 if there is no user logged in.
