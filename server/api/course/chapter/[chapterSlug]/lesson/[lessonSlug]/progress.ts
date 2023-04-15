@@ -1,7 +1,8 @@
 import protectRoute from "~/server/utils/protectRoute";
-import prisma from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 
-const { PrismaClient, Prisma } = prisma;
+const prisma = new PrismaClient();
+
 // Endpoint that updates the progress of a lesson
 export default defineEventHandler(async (event) => {
   // Only allow PUT, PATCH, or POST requests
